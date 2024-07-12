@@ -1,0 +1,4 @@
+.idea
+venv
+map_parts/*
+unfiltered/*
