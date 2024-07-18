@@ -30,6 +30,6 @@ def compile_map(name: str):
 
 
 if __name__ == "__main__":
-    a = "ancient_ruins"
+    a = "cave_of_phosphorescent_flowers"
     load(a)
     compile_map(a)
