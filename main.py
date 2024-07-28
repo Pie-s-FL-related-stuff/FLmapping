@@ -18,7 +18,7 @@ def compile_map(name: str):
     with open("maps.json", "r") as file:
         map_data = json.load(file)[name]
 
-    map_image = Image.new("RGB", size=(len(map_data[0]) * 512, len(map_data) * 512), color=(255, 0, 255))
+    map_image = Image.new("RGB", size=(len(map_data[0]) * 512, len(map_data) * 512), color=(0, 255, 0))
 
     for i, column in enumerate(map_data):
         for j, tile in enumerate(column):
@@ -30,6 +30,6 @@ def compile_map(name: str):
 
 
 if __name__ == "__main__":
-    a = "cave_of_phosphorescent_flowers"
+    a = "port_puerto_beach_district"
     load(a)
     compile_map(a)
