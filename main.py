@@ -2,7 +2,7 @@ import json
 from PIL import Image
 
 
-MAP = "west_grassy_plains"
+MAP = "deep_elderwood"
 
 
 class MissingTileError(Exception):
@@ -12,7 +12,7 @@ class MissingTileError(Exception):
 
 def get_tile(map_name: str, x: int, y: int, tile: str) -> Image.Image:
     if tile != "":
-        return Image.open(f"map_parts/tex1_512x512_{tile}_3.png")
+        return Image.open(f"map_parts/tex1_512x512_{tile}_3_mip0.png")
     try:
         return Image.open(f"missing_parts/{map_name}/{y + 1}_{x + 1}.png")
     except FileNotFoundError:
