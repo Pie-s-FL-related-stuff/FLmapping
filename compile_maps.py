@@ -22,6 +22,3 @@ def compile_map(map_name: str):
 def remove_borders(image: Image.Image) -> Image.Image:
     return image.crop((*get_top_left_corner(image), *get_down_right_corner(image)))
 
-
-if __name__ == "__main__":
-    remove_borders(compile_map(MAP)).show()

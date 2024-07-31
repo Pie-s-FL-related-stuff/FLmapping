@@ -22,7 +22,6 @@ def get_top_left_corner(image: Image.Image) -> tuple[int, int]:
     pixel_map = image.convert("RGB").load()
     for i in range(image.width * image.height):
         x, y = divmod(i, image.height)
-        print(x, y, pixel_map[x, y])
         if pixel_map[x, y] != (255, 0, 255):
             return x, y
     return 0, 0
