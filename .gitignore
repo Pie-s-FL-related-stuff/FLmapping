@@ -1,2 +1,5 @@
 .idea
 venv
+__pycache__
+edited_maps/*
+edited_tiles/*
